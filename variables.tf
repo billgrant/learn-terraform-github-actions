@@ -13,7 +13,7 @@ variable "region" {
 variable "env" {
   type        = string
   description = "Value for the environment tag."
-  default = "actions"
+  default = "demo"
 }
 
 variable "hashi_products" {
