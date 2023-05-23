@@ -1,5 +1,17 @@
 // Github actions demo workflow
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.4"
+    }
+  }
+}
 
 module "nocode_s3_static_website" {
   source = "app.terraform.io/billgrant/nocode-s3-static-website/aws"
